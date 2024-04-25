@@ -63,3 +63,17 @@ h5 {
   font-size: 40px;
   margin-right: 20px;
 }
+
+.registro-exitoso {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.Alert {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}

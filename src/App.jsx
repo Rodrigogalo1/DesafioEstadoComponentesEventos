@@ -15,10 +15,6 @@ function App() {
     <h5>O usa tu mail para registrrte</h5>
      <Form />
     <alert/>
-
-
-
-
      </div>
     </div>
     </>

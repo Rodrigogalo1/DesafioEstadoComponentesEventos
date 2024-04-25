@@ -17,18 +17,21 @@ export const Form = () => {
         if (nombre === '' || email === '' || password === '' || confirmPassword === '') {
             setError(true);
             setAlerta('Debes completar todos los campos');
+            setRegistroExitoso(false);
             return;
         }
 
         if (!/\S+@\S+\.\S+/.test(email)) {
             setError(true);
             setAlerta('El formato del correo electrónico es incorrecto');
+            setRegistroExitoso(false);
             return;
         }
 
         if (password !== confirmPassword) {
             setError(true);
             setAlerta('Las contraseñas no coinciden');
+            setRegistroExitoso(false);
             return;
         }
 
@@ -85,7 +88,8 @@ export const Form = () => {
                 />
             </div>
             <button type="submit" className="btn btn-success">Registrarse</button>
-            {error && <Alert mensaje={alerta} />}
+            {error && <Alert mensaje={alerta} className="Alert" />}
+            {registroExitoso && <div className="registro-exitoso">Registro exitoso</div>}
         </form>
     );
 };
