@@ -12,7 +12,7 @@ function App() {
       <div className="card-body">
     <h1>Crea una cuenta</h1>
     <Registro/>
-    <h5>O usa tu mail para registrrte</h5>
+    <h5>O usa tu mail para registrarte</h5>
      <Form />
     <alert/>
      </div>
